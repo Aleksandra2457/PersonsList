@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		D3D3056F27F5DA0400D7E862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3056E27F5DA0400D7E862 /* AppDelegate.swift */; };
 		D3D3057127F5DA0400D7E862 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3057027F5DA0400D7E862 /* SceneDelegate.swift */; };
-		D3D3057327F5DA0400D7E862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3057227F5DA0400D7E862 /* ViewController.swift */; };
 		D3D3057627F5DA0400D7E862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D3057427F5DA0400D7E862 /* Main.storyboard */; };
 		D3D3057827F5DA0400D7E862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D3057727F5DA0400D7E862 /* Assets.xcassets */; };
 		D3D3057B27F5DA0400D7E862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D3057927F5DA0400D7E862 /* LaunchScreen.storyboard */; };
 		D3D3058927F5DB7700D7E862 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3058827F5DB7700D7E862 /* DataManager.swift */; };
 		D3D3058B27F5DBB700D7E862 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3058A27F5DBB700D7E862 /* Person.swift */; };
+		D3D3058D27F5DCA600D7E862 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3058C27F5DCA600D7E862 /* MainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D3D3056B27F5DA0400D7E862 /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D3056E27F5DA0400D7E862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D3057027F5DA0400D7E862 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3D3057227F5DA0400D7E862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3D3057527F5DA0400D7E862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3D3057727F5DA0400D7E862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D3057A27F5DA0400D7E862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D3057C27F5DA0400D7E862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D3058827F5DB7700D7E862 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D3D3058A27F5DBB700D7E862 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D3D3058C27F5DCA600D7E862 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		D3D3058427F5DA2500D7E862 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D3D3057227F5DA0400D7E862 /* ViewController.swift */,
+				D3D3058C27F5DCA600D7E862 /* MainTabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D3058D27F5DCA600D7E862 /* MainTabBarViewController.swift in Sources */,
 				D3D3058B27F5DBB700D7E862 /* Person.swift in Sources */,
-				D3D3057327F5DA0400D7E862 /* ViewController.swift in Sources */,
 				D3D3058927F5DB7700D7E862 /* DataManager.swift in Sources */,
 				D3D3056F27F5DA0400D7E862 /* AppDelegate.swift in Sources */,
 				D3D3057127F5DA0400D7E862 /* SceneDelegate.swift in Sources */,

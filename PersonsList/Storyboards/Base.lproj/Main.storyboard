@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contact List View Controller-->
+        <!--Contact List Table View Controller-->
         <scene sceneID="6xa-NX-OwL">
             <objects>
-                <tableViewController id="Gu8-xN-jO4" customClass="ContactListViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Gu8-xN-jO4" customClass="ContactListTableViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jAX-Yk-2qf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,7 +101,7 @@
         <!--Contact List-->
         <scene sceneID="9N4-Cs-AYs">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="i38-fm-oK9" customClass="TabBarViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="i38-fm-oK9" customClass="MainTabBarViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Contact List" id="LJ1-3g-4tn"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="as5-Sp-e6b">

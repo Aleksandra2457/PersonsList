@@ -8,22 +8,32 @@
 import UIKit
 
 class ContactListTableViewController: UITableViewController {
+    
+    // MARK: - Public Properties
+    var persons: [Person] = []
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+    // MARK: - Table View Data Source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        persons.count
     }
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let person = persons[indexPath.row]
+        
+        content.text = person.fullName
+        cell.contentConfiguration = content
+        
+        return cell
+    }
 
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let detailVC = segue.destination as? ContactDetailsViewController else { return }
+            detailVC.person = persons[indexPath.row]
+        }
+    }
+    
 }
